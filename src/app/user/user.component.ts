@@ -1,4 +1,4 @@
-import { Component, computed, signal,Input, input, Output, EventEmitter } from '@angular/core';
+import { Component, computed, signal,Input, input, Output, EventEmitter, output } from '@angular/core';
 import { DUMMY_USERS } from '../dummy-users';
 
 @Component({
@@ -20,6 +20,7 @@ export class UserComponent {
    @Input({required : true}) name!: string;
    @Input({required : true}) id!: string;
    @Output() select = new EventEmitter();
+   //select = output<string>();
 
   //avatar = input.required<string>();
   //name = input.required<string>();
