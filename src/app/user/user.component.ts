@@ -19,7 +19,7 @@ export class UserComponent {
    @Input({required : true}) avatar!: string;
    @Input({required : true}) name!: string;
    @Input({required : true}) id!: string;
-   @Output() select = new EventEmitter();
+   @Output() select = new EventEmitter<string>();
    //select = output<string>();
 
   //avatar = input.required<string>();
