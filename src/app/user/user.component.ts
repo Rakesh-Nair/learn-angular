@@ -16,8 +16,8 @@ export class UserComponent {
   }
 
   //imagePath = computed(()=>'assets/users/'+this.selectedUser().avatar);
-  @Input() avatar!: string;
-  @Input() name!: string;
+  @Input({required : true}) avatar!: string;
+  @Input({required : true}) name!: string;
   onSelectUser(){
 
   }
