@@ -24,10 +24,6 @@ get selectedUserTasks(){
   return this.tasksService.getTasks(this.userId);
 }
 
-onComplete(taskId:string){
-  this.tasksService.removeTask(taskId)
-}
-
 onStartAddTask(){
   this.isAddingTask = true;
 }
